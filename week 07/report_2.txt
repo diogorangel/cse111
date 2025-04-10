@@ -1,0 +1,11 @@
+🏋️ Fitness Progress Report 🏋️
+============================
+Total Time Exercising: 1180.00 minutes
+Total Distance Run: 20.00 km
+Average Weight Lifted: 80.98 kg
+
+Workout Counts by Type:
+ - Runnning, bodybuilding: 1 sessions
+ - Running: 3 sessions
+ - Bodybuilding: 2 sessions
+ - BodyBuilding: 1 sessions
