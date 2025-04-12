@@ -1,0 +1,16 @@
+Author: Diogo Rangel Dos Santos
+Second Report for a Student Chosen Project
+
+Follow above what I did:
+
+=============My table work Diogo Rangel====================
+   Time Spent
+   Date       (hours)   Description of Work
+----------  ----------  -------------------------
+2025-04-03  2 hours     Research and design program structure
+2025-04-07  2 hours     Implement data logging and storage functions
+2025-04-08  3 hours     Develop basic data retrieval and calculation functions
+2025-04-09  3 hours	Implement data visualization and reporting
+2025-04-10  2 hours	Write test cases and run pytest
+2025-04-10  1 hours 	Finalize documentation and refine code
+=============My table work Diogo Rangel====================
