@@ -16,6 +16,7 @@ WORKOUT_FILE = "workout.csv"
 # Helper: Input Validators
 # ------------------------
 
+#First Fuction: get_valid_input
 def get_valid_input(prompt, input_type=float, optional=True):
     """Prompt the user until valid input is entered."""
     while True:
@@ -26,7 +27,8 @@ def get_valid_input(prompt, input_type=float, optional=True):
             return input_type(value)
         except ValueError:
             print(f"Invalid input. Please enter a valid {input_type.__name__}.")
-
+            
+#Second Fuction: get_valid_date
 def get_valid_date(prompt):
     """Prompt for a valid date in YYYY-MM-DD format."""
     while True:
@@ -41,6 +43,7 @@ def get_valid_date(prompt):
 # Core Functions
 # ------------------------
 
+#Third Fuction: log_workout
 def log_workout():
     """Logs a workout entry from user input with validation."""
     print("\nLog New Workout")
@@ -57,6 +60,7 @@ def log_workout():
         writer.writerow([date, exercise, sets, reps, weight, duration, distance])
     print("✅ Workout logged successfully!\n")
 
+#Fourth Fuction: view_progress
 def view_progress():
     """Displays the logged workout history."""
     if not os.path.exists(WORKOUT_FILE):
@@ -70,6 +74,7 @@ def view_progress():
             print(row)
     print()
 
+#Fifth Fuction: calculate_trends
 def calculate_trends():
     """Calculates average stats and prints progress info."""
     if not os.path.exists(WORKOUT_FILE):
@@ -105,6 +110,7 @@ def calculate_trends():
     print(f"- Total Distance Run: {total_distance:.2f} km")
     print(f"- Total Time Exercising: {total_duration:.2f} minutes\n")
 
+#Sixth Fuction: generate_report
 def generate_report():
     """Generates a matplotlib line graph of workout duration over time."""
     if not os.path.exists(WORKOUT_FILE):
@@ -142,6 +148,7 @@ def generate_report():
     else:
         print("Insufficient data for visualization.\n")
 
+#seventh Fuction: export_data
 def export_data():
     """Exports workout data to a CSV file."""
     if not os.path.exists(WORKOUT_FILE):
@@ -153,6 +160,7 @@ def export_data():
         dst.write(src.read())
     print(f"📤 Data exported to {export_file}\n")
 
+#eighth Fuction: generate_text_report
 def generate_text_report():
     """Generates a text-based report and saves it to report_2.txt."""
     if not os.path.exists(WORKOUT_FILE):
@@ -199,6 +207,7 @@ def generate_text_report():
 # Main Menu
 # ------------------------
 
+#ninth Fuction: main (mainly for the menu)
 def main():
     while True:
         print("--- 🏋️ Fitness Progress Tracker ---")
